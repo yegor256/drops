@@ -1,3 +1,14 @@
+<img src="./drops_logo.png" height="100px">
+
+[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/drops)](http://www.rultor.com/p/yegor256/drops)
+
+[![Build Status](https://img.shields.io/travis/yegor256/drops/master.svg)](https://travis-ci.org/yegor256/drops)
+[![PDD status](http://www.0pdd.com/svg?name=yegor256/drops)](http://www.0pdd.com/p?name=teamed/yegor256/drops)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/drops/blob/master/LICENSE.txt)
+[![NPM version](https://badge.fury.io/js/drops.svg)](http://badge.fury.io/js/drops)
+
+[![Hits-of-Code](https://hitsofcode.com/github/yegor256/drops)](https://hitsofcode.com/view/github/yegor256/drops)
+
 Instead of
 
 ```html
@@ -16,7 +27,7 @@ Just add it to your HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops-css.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops.min.css"/>
   </head>
 </html>
 ```

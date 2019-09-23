@@ -34,13 +34,13 @@ release:
     # Current branch is __rultor
 
     # Add built files to git and commit
-    git add -f dist/drops-css-${tag}.min.css
-    git add -f dist/drops-css-${tag}.min.css.map
-    git add -f dist/drops-css-${tag}.css
+    git add -f dist/drops-${tag}.min.css
+    git add -f dist/drops-${tag}.min.css.map
+    git add -f dist/drops-${tag}.css
     git commit -am "Added CSS files for ${tag}"
 
     # We'll gonna need these files later...
-    mv dist/drops-css-${tag}.min.css /tmp
+    mv dist/drops-${tag}.min.css /tmp
 
     # Checkout to gh-pages and reset any modifications
     branch=$(git rev-parse --abbrev-ref HEAD)
@@ -49,12 +49,12 @@ release:
     sudo /bin/bash -c "cd '$(pwd)'; git clean -fd"
 
     # Add the current, minified css file to the gh-pages branch
-    mv /tmp/drops-css-${tag}.min.css .
-    cp drops-css-${tag}.min.css drops-css.min.css
-    cp drops-css-${tag}.min.css drops.min.css
+    mv /tmp/drops-${tag}.min.css .
+    cp drops-${tag}.min.css drops.min.css
+    cp drops-${tag}.min.css drops.min.css
 
-    git add drops-css-${tag}.min.css
-    git add drops-css.min.css
+    git add drops-${tag}.min.css
+    git add drops.min.css
     git add drops.min.css
 
     # Commit and change the branch to master
