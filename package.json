@@ -1,6 +1,6 @@
 {
   "name": "drops",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "copyright": "2019",
   "description": "Primitive CSS classes to replace most commonly used styles",
   "main": "index.js",
