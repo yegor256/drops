@@ -36,12 +36,15 @@ Here is a full list of "drops":
 
 | CSS class | Style |
 |---|---|
-| `bold` | font-weight: bold; |
-| `italic` | font-style: italic; |
-| `monospaced` | font-family: monospaced; |
-| `right` | text-align: right; |
-| `left` | text-align: left; |
-| `center` | text-align: center; |
+| `bold` | `font-weight: bold;` |
+| `italic` | `font-style: italic;` |
+| `monospaced` | `font-family: monospaced;` |
+| `right` | `text-align: right;` |
+| `left` | `text-align: left;` |
+| `center` | `text-align: center;` |
+| `smaller` | `font-size: .8em;` |
+| `larger` | `font-size: 1.2em;` |
+| `invisible` | `display: none;` |
 
 Also, all [140 web colors](https://en.wikipedia.org/wiki/Web_colors)
 are supported, like `tomato` or `blueviolet`.
