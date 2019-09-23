@@ -38,7 +38,7 @@ Here is a full list of "drops":
 |---|---|
 | `bold` | `font-weight: bold;` |
 | `italic` | `font-style: italic;` |
-| `monospaced` | `font-family: monospaced;` |
+| `monospace` | `font-family: monospace;` |
 | `right` | `text-align: right;` |
 | `left` | `text-align: left;` |
 | `center` | `text-align: center;` |

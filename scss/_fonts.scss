@@ -20,6 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-@import 'colors';
-@import 'layout';
-@import 'fonts';
+.monospace { font-family: monospace; }
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+.smaller { font-size: .8em; }
+.larger { font-size: 1.2em; }
