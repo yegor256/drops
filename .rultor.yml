@@ -41,9 +41,6 @@ release:
 
     # We'll gonna need these files later...
     mv dist/drops-css-${tag}.min.css /tmp
-    mv index.html /tmp
-    mv drops_logo.png /tmp
-    mv drops_logo.svg /tmp
 
     # Checkout to gh-pages and reset any modifications
     branch=$(git rev-parse --abbrev-ref HEAD)
@@ -55,16 +52,10 @@ release:
     mv /tmp/drops-css-${tag}.min.css .
     cp drops-css-${tag}.min.css drops-css.min.css
     cp drops-css-${tag}.min.css drops.min.css
-    mv /tmp/index.html .
-    mv /tmp/drops_logo.png .
-    mv /tmp/drops_logo.svg .
 
     git add drops-css-${tag}.min.css
     git add drops-css.min.css
     git add drops.min.css
-    git add index.html
-    git add drops_logo.png
-    git add drops_logo.svg
 
     # Commit and change the branch to master
     git commit --allow-empty -am "${tag}"
