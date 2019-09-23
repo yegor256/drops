@@ -1,0 +1,11 @@
+target/
+.idea/
+.sass-cache/
+*.iml
+.DS_Store
+node_modules/
+dist/
+drops.min.css
+drops.min.css.map
+package-lock.json
+

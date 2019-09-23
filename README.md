@@ -10,6 +10,17 @@ you do:
 <a class="tomato bold right">Hello</a>
 ```
 
+Just add it to your HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops-css.min.css"/>
+  </head>
+</html>
+```
+
 Here is a full list of "drops":
 
 | CSS class | Style |
@@ -21,4 +32,15 @@ Here is a full list of "drops":
 | left | text-align: left; |
 | center | text-align: center; |
 
-Want to add more? Send us a pull request.
+## How to contribute
+
+Fork repository, make changes, send us a pull request. We will review
+your changes and apply them to the `master` branch shortly, provided
+they don't violate our quality standards. To avoid frustration, before
+sending us your pull request please run full Grunt build:
+
+```
+$ npm install
+$ npm test
+```
+
