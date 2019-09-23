@@ -44,7 +44,10 @@ Here is a full list of "drops":
 | `center` | `text-align: center;` |
 | `smaller` | `font-size: .8em;` |
 | `larger` | `font-size: 1.2em;` |
-| `invisible` | `display: none;` |
+| `invisible` | `display: none; visibility: hidden;` |
+
+There is also a set of drops for responsive design, like `desktop-only`, `printer-only`,
+`no-printer`, `printer`, etc. for `desktop`, `printer`, `mobile`, and `tablet`.
 
 Also, all [140 web colors](https://en.wikipedia.org/wiki/Web_colors)
 are supported, like `tomato` or `blueviolet`.

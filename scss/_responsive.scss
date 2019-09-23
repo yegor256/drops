@@ -20,8 +20,43 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-.left { text-align: left; }
-.right { text-align: right; }
-.center { text-align: right; }
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}
 
-.invisible { display: none; }
+@media print {
+  .no-printer,
+  .desktop-only,
+  .mobile-only,
+  .tablet-only {
+    @include hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .no-desktop,
+  .printer-only,
+  .mobile-only,
+  .tablet-only {
+    @include hidden;
+  }
+}
+
+@media (max-width: 1023px) {
+  .no-tablet,
+  .printer-only,
+  .mobile-only,
+  .desktop-only {
+    @include hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  .no-mobile,
+  .printer-only,
+  .desktop-only,
+  .tablet-only {
+    @include hidden;
+  }
+}
