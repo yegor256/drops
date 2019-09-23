@@ -4,22 +4,9 @@
 [![PDD status](http://www.0pdd.com/svg?name=yegor256/drops)](http://www.0pdd.com/p?name=teamed/yegor256/drops)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/drops/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/drops.svg)](http://badge.fury.io/js/drops)
-
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/drops)](https://hitsofcode.com/view/github/yegor256/drops)
 
-Instead of
-
-```html
-<a style="color: tomato; font-weight: bold; text-align: right;">Hello</a>
-```
-
-you do:
-
-```html
-<a class="tomato bold right">Hello</a>
-```
-
-Just add it to your HTML:
+First, you add it to your HTML:
 
 ```html
 <!DOCTYPE html>
@@ -28,6 +15,18 @@ Just add it to your HTML:
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/drops@gh-pages/drops.min.css"/>
   </head>
 </html>
+```
+
+And then, instead of this:
+
+```html
+<a style="color: tomato; font-weight: bold; text-align: right;">Hello</a>
+```
+
+You do this:
+
+```html
+<a class="tomato bold right">Hello</a>
 ```
 
 Here is a full list of "drops":
