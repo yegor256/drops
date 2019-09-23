@@ -36,6 +36,8 @@ Here is a full list of "drops":
 | `bold` | `font-weight: bold;` |
 | `italic` | `font-style: italic;` |
 | `monospace` | `font-family: monospace;` |
+| `serif` | `font-family: serif;` |
+| `sans-serif` | `font-family: sans-serif;` |
 | `right` | `text-align: right;` |
 | `left` | `text-align: left;` |
 | `center` | `text-align: center;` |
