@@ -25,7 +25,7 @@ release:
   script: |-
     # Change proper version for all necessary filers
     npm version "${tag}"
-    sed -i "s|VERSION|${tag}|g" bower.json
+    sed -i "s|VERSION|${tag}|g" package.json
 
     # Perform build
     git rm -rf dist/ --ignore-unmatch
