@@ -35,7 +35,6 @@ release:
     # Add built files to git and commit
     git add -f dist/drops-${tag}.min.css
     git add -f dist/drops-${tag}.min.css.map
-    git add -f dist/drops-${tag}.css
     git commit -am "Added CSS files for ${tag}"
 
     # We'll gonna need these files later...
@@ -50,10 +49,8 @@ release:
     # Add the current, minified css file to the gh-pages branch
     mv /tmp/drops-${tag}.min.css .
     cp drops-${tag}.min.css drops.min.css
-    cp drops-${tag}.min.css drops.min.css
 
     git add drops-${tag}.min.css
-    git add drops.min.css
     git add drops.min.css
 
     # Commit and change the branch to master
