@@ -46,8 +46,8 @@ Here is a full list of "drops":
 | `larger` | `font-size: 1.2em;` |
 | `invisible` | `display: none; visibility: hidden;` |
 
-There is also a set of drops for responsive design, like `desktop-only`, `printer-only`,
-`no-printer`, `printer`, etc. for `desktop`, `printer`, `mobile`, and `tablet`.
+There is also a set of drops for responsive design, like `desktop-only` and
+`no-printer` for `desktop`, `printer`, `mobile`, and `tablet`.
 
 Also, all [140 web colors](https://en.wikipedia.org/wiki/Web_colors)
 are supported, like `tomato` or `blueviolet`.
