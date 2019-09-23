@@ -1,5 +1,3 @@
-<img src="./drops_logo.png" height="100px">
-
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/drops)](http://www.rultor.com/p/yegor256/drops)
 
 [![Build Status](https://img.shields.io/travis/yegor256/drops/master.svg)](https://travis-ci.org/yegor256/drops)
