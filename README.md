@@ -20,13 +20,13 @@ First, you add it to your HTML:
 And then, instead of this:
 
 ```html
-<a style="color: tomato; font-weight: bold; text-align: right;">Hello</a>
+<p style="color: tomato; font-weight: bold; text-align: right;">Hello</p>
 ```
 
 You do this:
 
 ```html
-<a class="tomato bold right">Hello</a>
+<p class="tomato bold right">Hello</p>
 ```
 
 Here is a full list of "drops":
