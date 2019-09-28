@@ -44,7 +44,7 @@ Here is a full list of "drops":
 | `center` | `text-align: center;` |
 | `smaller` | `font-size: .8em;` |
 | `larger` | `font-size: 1.2em;` |
-| `invisible` | `display: none; visibility: hidden;` |
+| `invisible` | `display: none;` |
 
 There is also a set of drops for responsive design, like `desktop-only` and
 `no-printer` for `desktop`, `printer`, `mobile`, and `tablet`.
