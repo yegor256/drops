@@ -24,4 +24,12 @@
 .right { text-align: right; }
 .center { text-align: center; }
 
+$positions: static, relative, absolute, fixed, sticky;
+
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position;
+  }
+}
+
 .invisible { display: none; }
