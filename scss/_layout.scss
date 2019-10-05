@@ -24,4 +24,19 @@
 .right { text-align: right; }
 .center { text-align: center; }
 
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+.flex { display: flex; }
+.row { flex-direction: row; }
+.row-reverse { flex-direction: row-reverse; }
+.column { flex-direction: column; }
+.column-reverse { flex-direction: column-reverse; }
+.content-center { justify-content: center; }
+.content-between { justify-content: space-between; }
+.content-around { justify-content: space-around; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+
 .invisible { display: none; }
