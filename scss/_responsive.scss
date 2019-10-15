@@ -34,9 +34,13 @@
   }
 }
 
+.printer-only {
+  @include hidden;
+
+}
+
 @media (min-width: 1024px) {
   .no-desktop,
-  .printer-only,
   .mobile-only,
   .tablet-only {
     @include hidden;
@@ -45,7 +49,6 @@
 
 @media (max-width: 1023px) {
   .no-tablet,
-  .printer-only,
   .mobile-only,
   .desktop-only {
     @include hidden;
@@ -54,7 +57,6 @@
 
 @media (max-width: 640px) {
   .no-mobile,
-  .printer-only,
   .desktop-only,
   .tablet-only {
     @include hidden;

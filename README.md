@@ -20,13 +20,17 @@ First, you add it to your HTML:
 And then, instead of this:
 
 ```html
-<p style="color: tomato; font-weight: bold; text-align: right;">Hello</p>
+<div style="display:flex; justify-content:center; align-items: center">
+  <p style="color: tomato; font-weight: bold; text-align: right;">Hello</p>
+</div>
 ```
 
 You do this:
 
 ```html
-<p class="tomato bold right">Hello</p>
+<div class="flex items-center justify-center">
+  <p class="tomato bold right">Hello</p>
+</div>
 ```
 
 Here is a full list of "drops":
@@ -42,12 +46,23 @@ Here is a full list of "drops":
 | `right` | `text-align: right;` |
 | `left` | `text-align: left;` |
 | `center` | `text-align: center;` |
-| `smaller` | `font-size: .8em;` |
-| `larger` | `font-size: 1.2em;` |
+| `flex` | `display: flex;` |
+| `items-center` | `align-items: center;` |
+| `justify-center` | `justify-content: center` |
+| `small` | `font-size: .8em;` |
+| `smaller` | `font-size: .6em;` |
+| `large` | `font-size: 1.2em;` |
+| `larger` | `font-size: 1.4em;` |
 | `invisible` | `display: none;` |
 
 There is also a set of drops for responsive design, like `desktop-only` and
 `no-printer` for `desktop`, `printer`, `mobile`, and `tablet`.
+
+For example, to hide a `div` on mobile devices and desktop, but show it on tablet devices, you do this:
+
+```html
+  <p class="tablet-only">Hello</p>
+```
 
 Also, all [140 web colors](https://en.wikipedia.org/wiki/Web_colors)
 are supported, like `tomato` or `blueviolet`.
