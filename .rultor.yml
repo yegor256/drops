@@ -1,27 +1,15 @@
+docker:
+  image: yegor256/rultor-image:1.22.0
 assets:
-  s3cfg: yegor256/home#assets/s3cfg
   npmrc: yegor256/home#assets/npmrc
 install: |
-  sudo gem install --no-document pdd
   npm install --no-color
-architect:
-  - yegor256
 merge:
   script: |
     npm run rultor --no-color
     pdd --source=$(pwd) --verbose --file=/dev/null
-  commanders:
-    - yegor256
-deploy:
-  script: |
-    npm test
-    pdd --source=$(pwd) --verbose --file=drops.xml
-    s3cmd --no-progress put drops.xml --config=../s3cfg s3://pdd.teamed.io/drops.xml
-  commanders:
-    - yegor256
 release:
-  commanders:
-    - yegor256
+  pre: false
   script: |-
     # Change proper version for all necessary filers
     npm version "${tag}"

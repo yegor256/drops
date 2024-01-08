@@ -45,6 +45,9 @@ Here is a full list of "drops":
 | `smaller` | `font-size: .8em;` |
 | `larger` | `font-size: 1.2em;` |
 | `invisible` | `display: none;` |
+| `block` | `display: block;` |
+| `inline` | `display: inline;` |
+| `inline-block` | `display: inline-block;` |
 | `position-static` | `position: static;` |
 | `position-relative` | `position: relative;` |
 | `position-absolute` | `position: absolute;` |
