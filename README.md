@@ -45,6 +45,11 @@ Here is a full list of "drops":
 | `smaller` | `font-size: .8em;` |
 | `larger` | `font-size: 1.2em;` |
 | `invisible` | `display: none;` |
+| `position-static` | `position: static;` |
+| `position-relative` | `position: relative;` |
+| `position-absolute` | `position: absolute;` |
+| `position-fixed` | `position: fixed;` |
+| `position-sticky` | `position: sticky;` |
 
 There is also a set of drops for responsive design, like `desktop-only` and
 `no-printer` for `desktop`, `printer`, `mobile`, and `tablet`.
