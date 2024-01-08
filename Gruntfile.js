@@ -38,13 +38,14 @@ module.exports = function (grunt) {
             outputStyle: 'compressed'
           },
           files: {
-            'drops.min.css': 'scss/main.scss'
+            'tacit.min.css': 'scss/main.scss'
           }
         },
         dist: {
           options: {
             sourceMap: true,
-            outputStyle: 'compressed'
+            outputStyle: 'compressed',
+            implementation: require('node-sass')
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
@@ -53,7 +54,8 @@ module.exports = function (grunt) {
         uncompressed: {
           options: {
             sourceMap: false,
-            outputStyle: 'expanded'
+            outputStyle: 'expanded',
+            implementation: require('node-sass')
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
@@ -67,10 +69,22 @@ module.exports = function (grunt) {
         }
       },
       sasslint: {
-        target: [
+        allFiles: [
           'scss/*.scss'
         ]
-      }
+      },
+      css_purge: {
+        dist: {
+          options: {},
+          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+        },
+        uncompressed: {
+          options: {},
+          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+        },
+      },
     }
   );
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
