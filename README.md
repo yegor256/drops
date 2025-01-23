@@ -71,4 +71,3 @@ sending us your pull request please run full Grunt build:
 $ npm install
 $ npm test
 ```
-
