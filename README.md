@@ -1,3 +1,5 @@
+# Simple but Useful CSS Classes
+
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/drops)](http://www.rultor.com/p/yegor256/drops)
 
 [![grunt](https://github.com/yegor256/drops/actions/workflows/grunt.yml/badge.svg)](https://github.com/yegor256/drops/actions/workflows/grunt.yml)
@@ -67,7 +69,7 @@ your changes and apply them to the `master` branch shortly, provided
 they don't violate our quality standards. To avoid frustration, before
 sending us your pull request please run full Grunt build:
 
-```
-$ npm install
-$ npm test
+```bash
+npm install
+npm test
 ```
