@@ -20,23 +20,17 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: grunt
+name: yamllint
 'on':
   push:
+    branches:
+      - master
   pull_request:
+    branches:
+      - master
 jobs:
-  grunt:
-    strategy:
-      matrix:
-        os: [windows-2022, ubuntu-24.04, macos-15]
-        java: [17]
-        node: [16]
-    runs-on: ${{ matrix.os }}
+  yamllint:
+    runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node }}
-    - run: npm install
-    - run: npm install --force -g grunt-cli
-    - run: grunt
+      - uses: actions/checkout@v4
+      - uses: ibiqlik/action-yamllint@v3
