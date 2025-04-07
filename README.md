@@ -1,11 +1,11 @@
 # Simple but Useful CSS Classes
 
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/drops)](http://www.rultor.com/p/yegor256/drops)
+[![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/drops)](https://www.rultor.com/p/yegor256/drops)
 
 [![grunt](https://github.com/yegor256/drops/actions/workflows/grunt.yml/badge.svg)](https://github.com/yegor256/drops/actions/workflows/grunt.yml)
-[![PDD status](http://www.0pdd.com/svg?name=yegor256/drops)](http://www.0pdd.com/p?name=teamed/yegor256/drops)
+[![PDD status](https://www.0pdd.com/svg?name=yegor256/drops)](https://www.0pdd.com/p?name=teamed/yegor256/drops)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/drops/blob/master/LICENSE.txt)
-[![NPM version](https://badge.fury.io/js/drops.svg)](http://badge.fury.io/js/drops)
+[![NPM version](https://badge.fury.io/js/drops.svg)](https://badge.fury.io/js/drops)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/drops)](https://hitsofcode.com/view/github/yegor256/drops)
 
 First, you add it to your HTML:
