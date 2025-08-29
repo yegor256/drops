@@ -8,5 +8,12 @@
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 
-.smaller { font-size: .8em; }
-.larger { font-size: 1.2em; }
+.smaller {
+  font-size: .8em;
+  line-height: 85%;
+}
+
+.larger {
+  font-size: 1.2em;
+  line-height: 110%;
+}
