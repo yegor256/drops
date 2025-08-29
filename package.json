@@ -39,5 +39,5 @@
     "rultor": "grunt rultor --no-color",
     "test": "grunt --no-color"
   },
-  "version": "0.1.0"
+  "version": "0.3.0"
 }
