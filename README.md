@@ -14,7 +14,7 @@ First, you add it to your HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drops@0.3.0/dist/drops-0.3.0.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drops@0.3.1/dist/drops-0.3.1.min.css"/>
   </head>
 </html>
 ```
