@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             outputStyle: 'compressed'
           },
           files: {
-            'tacit.min.css': 'scss/main.scss'
+            'drops.min.css': 'scss/main.scss'
           }
         },
         dist: {
