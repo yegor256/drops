@@ -37,7 +37,7 @@ You do this:
 Here is a full list of "drops" (excluding the colors):
 
 | CSS class | Style |
-|---|---|
+| --- | --- |
 | `bold` | `font-weight: bold;` |
 | `italic` | `font-style: italic;` |
 | `underline` | `text-decoration: underline;` |
