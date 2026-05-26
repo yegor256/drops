@@ -12,10 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: |-
-          git fetch --tags --force && \
-          latest=$(git tag --sort=creatordate | tail -1) && \
+          git fetch --tags --force
+          latest=$(git tag --sort=creatordate | tail -1)
           sed -E -i "s/drops@[0-9.]+/drops@${latest}/g" README.md
           sed -E -i "s/drops-[0-9.]+\.min/drops-${latest}.min/g" README.md
+          sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/drops@${latest}/dist/drops-${latest}.min.css" \
+              | openssl dgst -sha384 -binary | openssl base64 -A)
+          esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g')
+          sed -E -i "s|integrity=\"[^\"]*\"|integrity=\"sha384-$esc\"|g" README.md
       - uses: peter-evans/create-pull-request@v8
         with:
           sign-commits: true

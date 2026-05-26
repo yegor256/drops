@@ -14,7 +14,10 @@ First, you add it to your HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drops@0.3.2/dist/drops-0.3.2.min.css"/>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/drops@0.3.2/dist/drops-0.3.2.min.css"
+      integrity="sha384-???????????????????"
+      crossorigin="anonymous"/>
   </head>
 </html>
 ```
