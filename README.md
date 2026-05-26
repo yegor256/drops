@@ -16,7 +16,7 @@ First, you add it to your HTML:
   <head>
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/drops@0.3.2/dist/drops-0.3.2.min.css"
-      integrity="sha384-???????????????????"
+      integrity="sha384-p1uPBv+9Vp2mQmUJHUrsDnDVbg88Upi66Gf8uTcVy0I2ZIHbSUIEj3q+S6D7B1Lz"
       crossorigin="anonymous"/>
   </head>
 </html>
